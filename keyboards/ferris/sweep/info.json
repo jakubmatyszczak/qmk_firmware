@@ -23,7 +23,16 @@
     },
     "split": {
         "enabled": true,
+        "transport":
+        {
+            "protocol": "serial",
+        },
         "soft_serial_pin": "D2",
+        "usb_detect":
+        {
+            "enabled": true,
+            "timeout" : 2500,
+        },
         "bootmagic": {
             "matrix": [4, 4]
         },
