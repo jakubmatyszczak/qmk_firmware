@@ -8,6 +8,21 @@
 
 This is a keyboard firmware based on the [tmk\_keyboard firmware](https://github.com/tmk/tmk_keyboard) with some useful features for Atmel AVR and ARM controllers, and more specifically, the [OLKB product line](https://olkb.com), the [ErgoDox EZ](https://ergodox-ez.com) keyboard, and the [Clueboard product line](https://clueboard.co).
 
+## Mafish
+This repo contains patched ferris/SweepV2 entry in 'info.json' as original one did not work 
+(TRRS issue). 
+Requires same setup as normal:
+```
+apt install pyhton3-pip
+pip install qmk
+qmk setup
+(install drivers with -y)
+qmk compile ./mafish1.json
+qmk flash ./ferris_sweep_mafish1.hex
+(do this for both halfs)
+```
+also dont forget to set left/right parameter in eeprom either via CLI or QMK Toolbox.
+
 ## Documentation
 
 * [See the official documentation on docs.qmk.fm](https://docs.qmk.fm)
