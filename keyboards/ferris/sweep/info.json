@@ -31,7 +31,7 @@
         "usb_detect":
         {
             "enabled": true,
-            "timeout" : 2500,
+            "timeout" : 500,
         },
         "bootmagic": {
             "matrix": [4, 4]

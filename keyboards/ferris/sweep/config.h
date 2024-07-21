@@ -6,4 +6,5 @@
 
 #pragma once
 
-#define EE_HANDS
+ #define EE_HANDS // UNCOMMENT FOR LEFT HALF
+//#define MASTER_RIGHT  //UNCOMMENT FOR RIGHT HALF

@@ -17,11 +17,13 @@ apt install pyhton3-pip
 pip install qmk
 qmk setup
 (install drivers with -y)
-qmk compile ./mafish1.json
-qmk flash ./ferris_sweep_mafish1.hex
+> SET LEFT/RIGHT, see below
+qmk compile ./mafish.json
+qmk flash ./ferris_sweep_xxxxxxxxx.hex
 (do this for both halfs)
 ```
-also dont forget to set left/right parameter in eeprom either via CLI or QMK Toolbox.
+To set left/right firmware fersion, got to `./keyboards/ferris/sweep/config.h` and uncomment ONE of the options!
+
 
 ## Documentation
 
